@@ -1,0 +1,10 @@
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate.ddl-auto: ${POSTGRES_DDL_AUTO:create}
+    show-sql: ${POSTGRES_SHOW_SQL:true}
+
+jwt:
+  secret:
+    key: abrakadabra
+  expiration: 10
